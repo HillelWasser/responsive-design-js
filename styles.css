@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+/* .body {
+    height: 100%;
+    width: 100%;
+} */
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+.upperDiv {
+    /* background-color:grey ; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+}
+
+.centerDiv {
+    display: flex;
+    width: 100%;
+}
+
+.bottomDiv {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap:25px;
+}
+
+.upperDivChild {
+    background-color: yellow;
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+
+.centerDivChild {
+    display: flex;
+    background-color: red ;
+    width: 100%;
+    height: 200px;
+}
+
+.bottomDivChild {
+    display: flex;
+    background-color: purple ;
+    flex-direction:column;
+    width:100%;
+    height: 50px;
+}
+
+#bottomHideChild {
+    display: flex;
+    background-color: purple ;
+    flex-direction:column;
+    width:100%;
+    height: 150px; 
+}
+
+@media(min-width:320px)  {
+   .upperDiv {
+flex-direction: row;
+   } 
+   .upperDivChild {
+    height: 150px;
+   }
+}
+@media(min-width:769px)  {
+   .bottomDiv {
+flex-direction: row;
+   } 
+   .bottomDivChild {
+    height: 150px;
+   }
+   
+}
+
+@media(max-width:769px) {
+    #bottomHideChild {
+        display: none;
+    }
+}
+
